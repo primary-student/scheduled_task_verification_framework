@@ -1,5 +1,5 @@
 # scheduled_task_verification_framework
-#### This is a python framework used to verify whether the scheduled task will execute as expected.
+#### This is a python testing framework used to verify whether the scheduled task will execute as expected at the scheduled time.
 #### It has been personally tested on centos7.
 #### <font color="#dd0000">Please note that running the example will change the system time!</font><br />
 #### <font color="#dd0000">Please execute the example in a test environment</font><br /><br/>
