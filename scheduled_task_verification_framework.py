@@ -1,5 +1,4 @@
 import os
-from enum import Enum
 from time import sleep, time
 from functools import wraps
 from threading import RLock, Thread
@@ -22,7 +21,7 @@ logger.addHandler(StreamHandler())
 
 
 
-class status_enum(Enum):
+class status_enum(object):
     not_exist = None
     initial = 0
     running = 1
