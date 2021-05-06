@@ -1,5 +1,6 @@
 import os
 import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir)))
 
 from datetime import datetime, timedelta
 from time import time, sleep, strftime, localtime, strptime, mktime
@@ -70,8 +71,6 @@ if __name__ == "__main__":
     start_time_struct = localtime(sec_start)
     sts = start_time_struct
 
-
-    sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir)))
     from sys_time_changer import change_sys_time
     change_sys_time(sts.tm_year, sts.tm_mon, sts.tm_mday, sts.tm_hour, sts.tm_min, sts.tm_sec)
 
