@@ -185,7 +185,7 @@ class scheduler_task_manager(object):
                     self.logger.info("Task [%s] started." % name)
                     ret = func(*args, **argv)
                     self.logger.info("Task [%s] ended." % name)
-                    self.logger.info("Use time %f s." % (time()-st) )
+                    self.logger.info("Use time %f s.\n" % (time()-st) )
                     self.change_role_status(name, status_enum.done)
                     return ret
 

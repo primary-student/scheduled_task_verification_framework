@@ -40,12 +40,12 @@ def now_is_month_1st():
 
 @scheduler_task_manager_obj.is_cronTask(name = "monday",task_scheduled_run_at = now_is_monday)
 def task_on_every_monday():
-    print("Running task [task_on_every_monday], %s" %strftime("%Y-%m-%d-%H_%M_%S", localtime()))
+    print("Running task [task_on_every_monday], %s" %strftime("%Y-%m-%d %H:%M:%S", localtime()))
 
 
 @scheduler_task_manager_obj.is_cronTask(name = "month_1st",task_scheduled_run_at = now_is_month_1st)
 def task_on_every_month_1st():
-    print("Running task [task_on_every_month_1st], %s" %strftime("%Y-%m-%d-%H_%M_%S", localtime()))
+    print("Running task [task_on_every_month_1st], %s" %strftime("%Y-%m-%d %H:%M:%S", localtime()))
 
 
 def load_tasks_and_start():

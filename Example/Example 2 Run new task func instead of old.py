@@ -39,10 +39,10 @@ def now_is_month_1st():
 
 
 def task_on_every_monday():
-    print("Running task [task_on_every_monday], %s" %strftime("%Y-%m-%d-%H_%M_%S", localtime()))
+    print("Running task [task_on_every_monday], %s" %strftime("%Y-%m-%d %H:%M:%S", localtime()))
 
 def task_on_every_month_1st():
-    print("Running task [task_on_every_month_1st], %s" %strftime("%Y-%m-%d-%H_%M_%S", localtime()))
+    print("Running task [task_on_every_month_1st], %s" %strftime("%Y-%m-%d %H:%M:%S", localtime()))
 
 
 def load_tasks_and_start():
